@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Qmanager.AtletaAlta">
+    <Position X="1" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>AtletaAlta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qmanager.BDgeneral">
+    <Position X="2.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BDgeneral.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qmanager.CEAtleta">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAgAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>CEAtleta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qmanager.Registro">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAYBBGEQABAgABCAAAACAAwgCAAQAAAgQgEAACA=</HashCode>
+      <FileName>Registro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantalla_de_carga.Login">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAACAQABAAwACAAAACAIAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Login.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantalla_de_carga.QManager">
+    <Position X="10" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAAACAAAAAAAACAAAACAIAAIAAAAAQAAQAAAAA=</HashCode>
+      <FileName>Pantalla de Carga.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pantalla_de_carga.Program">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qmanager.Properties.Resources">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAEAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Qmanager.Properties.Settings">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,12 @@
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\bin\Debug\Qmanager.exe.config
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\bin\Debug\Qmanager.exe
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\bin\Debug\Qmanager.pdb
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\bin\Debug\CustomControls.RJControls.dll
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Pantalla de carga.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Pantalla_de_carga.Form1.resources
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Qmanager.Properties.Resources.resources
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Pantalla de carga.csproj.GenerateResource.cache
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Pantalla de carga.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Pantalla de carga.csproj.CopyComplete
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Qmanager.exe
+C:\Users\user\source\repos\Pantalla de carga\Pantalla de carga\obj\Debug\Qmanager.pdb
