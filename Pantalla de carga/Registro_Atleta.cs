@@ -79,14 +79,14 @@ namespace Qmanager
 
         private void BtnGuardar_Click(object sender, EventArgs e)
         {
-            // Verificar si se ha seleccionado una foto
+        
             if (string.IsNullOrEmpty(PicFoto.ImageLocation))
             {
                 MessageBox.Show("Por favor, selecciona una foto de perfil antes de guardar.");
                 return; // Sale del método sin continuar el guardado
             }
 
-            // Crear un objeto CEAtleta con los datos del formulario
+
             CEAtleta atleta = new CEAtleta
             {
                 Cedula = TxtCedula.Texts,
@@ -96,16 +96,16 @@ namespace Qmanager
                 Password = TxtCedula.Texts,
             };
 
-            // Verificar si la cédula ya existe
+
             if (Atleta.ExisteCedula(atleta.Cedula))
             {
-                // Si existe, proceder a modificar
+
                 int result = Atleta.ModificarAtleta(atleta);
                 MessageBox.Show(result > 0 ? "Atleta modificado exitosamente." : "Error al modificar el atleta.");
             }
             else
             {
-                // Si no existe, proceder a agregar
+          
                 int result = Atleta.AgregarAtleta(atleta);
                 MessageBox.Show(result > 0 ? "Datos guardados exitosamente." : "Error al guardar los datos.");
             }
@@ -115,12 +115,12 @@ namespace Qmanager
 
         private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            // Verifica si se ha hecho clic en la columna de Foto
+   
             if (e.ColumnIndex == dataGridView1.Columns["Foto"].Index && e.RowIndex >= 0)
             {
                 string fotoUrl = dataGridView1.Rows[e.RowIndex].Cells["Foto"].Value.ToString();
 
-                // Mostrar la imagen en un PictureBox
+
                 PictureBox pictureBox = new PictureBox
                 {
                     Image = Image.FromFile(fotoUrl),
@@ -141,15 +141,14 @@ namespace Qmanager
 
         public void RefreshPantalla()
         {
-            dataGridView1.AutoGenerateColumns = false; // No generar columnas automáticamente
-            dataGridView1.Columns.Clear(); // Limpiar columnas anteriores
+            dataGridView1.AutoGenerateColumns = false; 
+            dataGridView1.Columns.Clear(); 
 
             // Definir columnas
             dataGridView1.Columns.Add("Cedula", "Cédula");
             dataGridView1.Columns.Add("Nombre", "Nombre");
             dataGridView1.Columns.Add("Apellido", "Apellido");
 
-            // Columna de Foto como Link
             DataGridViewLinkColumn linkColumn = new DataGridViewLinkColumn
             {
                 HeaderText = "Foto",
@@ -158,7 +157,7 @@ namespace Qmanager
             };
             dataGridView1.Columns.Add(linkColumn);
 
-            // Asignar la lista de atletas como fuente de datos
+
             List<CEAtleta> atletas = Atleta.PresentarRegistro();
             foreach (CEAtleta atleta in atletas)
             {
@@ -168,20 +167,18 @@ namespace Qmanager
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            // Verifica si hay filas seleccionadas
+
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                // Crear una lista para almacenar las cédulas a eliminar
+
                 List<string> cedulasAEliminar = new List<string>();
 
-                // Recorrer las filas seleccionadas y agregar las cédulas a la lista
                 foreach (DataGridViewRow row in dataGridView1.SelectedRows)
                 {
                     string cedula = row.Cells["Cedula"].Value.ToString();
                     cedulasAEliminar.Add(cedula);
                 }
 
-                // Borrar los atletas seleccionados
                 foreach (string cedula in cedulasAEliminar)
                 {
                     int resultado = Atleta.EliminarAtleta(cedula);
@@ -195,7 +192,7 @@ namespace Qmanager
                     }
                 }
 
-                // Refresca la pantalla para mostrar los cambios
+           
                 RefreshPantalla();
             }
             else
@@ -209,11 +206,10 @@ namespace Qmanager
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
-            string cedulaBusqueda = TxtCedulaBusqueda.Texts; // Obtén el texto ingresado en el campo de búsqueda
+            string cedulaBusqueda = TxtCedulaBusqueda.Texts; 
 
             if (!string.IsNullOrEmpty(cedulaBusqueda))
             {
-                // Llama al método para buscar coincidencias parciales
                 List<CEAtleta> atletas = Atleta.BuscarAtletasPorCedulaParcial(cedulaBusqueda);
 
                 if (atletas.Count > 0)

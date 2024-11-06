@@ -31,44 +31,48 @@ namespace Qmanager
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pantalla_Administrador));
-            this.rjButton2 = new CustomControls.RJControls.RJButton();
+            this.Evento = new CustomControls.RJControls.RJButton();
             this.Registros = new CustomControls.RJControls.RJButton();
             this.rjButton1 = new CustomControls.RJControls.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rjButton4 = new CustomControls.RJControls.RJButton();
-            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.rjDropdownMenu1 = new CustomControls.RJControls.RJDropdownMenu(this.components);
             this.registroAtletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroArbitroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroProfesorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rjCircularPictureBox1 = new CustomControls.RJControls.RJCircularPictureBox();
             this.PanelForm = new System.Windows.Forms.Panel();
             this.rjCircularPictureBox2 = new CustomControls.RJControls.RJCircularPictureBox();
+            this.rjDropdownMenu2 = new CustomControls.RJControls.RJDropdownMenu(this.components);
+            this.fixtureAtletaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.rjDropdownMenu1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).BeginInit();
             this.PanelForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).BeginInit();
+            this.rjDropdownMenu2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // rjButton2
+            // Evento
             // 
-            this.rjButton2.AutoSize = true;
-            this.rjButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton2.BorderRadius = 10;
-            this.rjButton2.BorderSize = 0;
-            this.rjButton2.FlatAppearance.BorderSize = 0;
-            this.rjButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rjButton2.ForeColor = System.Drawing.Color.White;
-            this.rjButton2.Location = new System.Drawing.Point(11, 225);
-            this.rjButton2.Name = "rjButton2";
-            this.rjButton2.Size = new System.Drawing.Size(150, 40);
-            this.rjButton2.TabIndex = 6;
-            this.rjButton2.Text = "Evento";
-            this.rjButton2.TextColor = System.Drawing.Color.White;
-            this.rjButton2.UseVisualStyleBackColor = false;
+            this.Evento.AutoSize = true;
+            this.Evento.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.Evento.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.Evento.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Evento.BorderRadius = 10;
+            this.Evento.BorderSize = 0;
+            this.Evento.FlatAppearance.BorderSize = 0;
+            this.Evento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Evento.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Evento.ForeColor = System.Drawing.Color.White;
+            this.Evento.Location = new System.Drawing.Point(11, 225);
+            this.Evento.Name = "Evento";
+            this.Evento.Size = new System.Drawing.Size(150, 40);
+            this.Evento.TabIndex = 6;
+            this.Evento.Text = "Evento";
+            this.Evento.TextColor = System.Drawing.Color.White;
+            this.Evento.UseVisualStyleBackColor = false;
+            this.Evento.Click += new System.EventHandler(this.Evento_Click);
             // 
             // Registros
             // 
@@ -114,7 +118,7 @@ namespace Qmanager
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.rjButton2);
+            this.panel1.Controls.Add(this.Evento);
             this.panel1.Controls.Add(this.Registros);
             this.panel1.Controls.Add(this.rjButton1);
             this.panel1.Controls.Add(this.rjButton4);
@@ -144,23 +148,6 @@ namespace Qmanager
             this.rjButton4.Text = "Carnet";
             this.rjButton4.TextColor = System.Drawing.Color.White;
             this.rjButton4.UseVisualStyleBackColor = false;
-            // 
-            // rjCircularPictureBox1
-            // 
-            this.rjCircularPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Blue;
-            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.rjCircularPictureBox1.BorderSize = 2;
-            this.rjCircularPictureBox1.GradientAngle = 50F;
-            this.rjCircularPictureBox1.Location = new System.Drawing.Point(17, 609);
-            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
-            this.rjCircularPictureBox1.Size = new System.Drawing.Size(150, 150);
-            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.rjCircularPictureBox1.TabIndex = 0;
-            this.rjCircularPictureBox1.TabStop = false;
-            this.rjCircularPictureBox1.Click += new System.EventHandler(this.rjCircularPictureBox1_Click);
             // 
             // rjDropdownMenu1
             // 
@@ -199,6 +186,24 @@ namespace Qmanager
             this.registroProfesorToolStripMenuItem.Text = "Registro Profesor";
             this.registroProfesorToolStripMenuItem.Click += new System.EventHandler(this.registroProfesorToolStripMenuItem_Click);
             // 
+            // rjCircularPictureBox1
+            // 
+            this.rjCircularPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.rjCircularPictureBox1.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.rjCircularPictureBox1.BorderColor = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderColor2 = System.Drawing.Color.Transparent;
+            this.rjCircularPictureBox1.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.rjCircularPictureBox1.BorderSize = 2;
+            this.rjCircularPictureBox1.GradientAngle = 50F;
+            this.rjCircularPictureBox1.Image = global::Qmanager.Properties.Resources.foto_del_desarrolador;
+            this.rjCircularPictureBox1.Location = new System.Drawing.Point(17, 609);
+            this.rjCircularPictureBox1.Name = "rjCircularPictureBox1";
+            this.rjCircularPictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.rjCircularPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rjCircularPictureBox1.TabIndex = 0;
+            this.rjCircularPictureBox1.TabStop = false;
+            this.rjCircularPictureBox1.Click += new System.EventHandler(this.rjCircularPictureBox1_Click);
+            // 
             // PanelForm
             // 
             this.PanelForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -229,6 +234,25 @@ namespace Qmanager
             this.rjCircularPictureBox2.TabIndex = 0;
             this.rjCircularPictureBox2.TabStop = false;
             // 
+            // rjDropdownMenu2
+            // 
+            this.rjDropdownMenu2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.rjDropdownMenu2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rjDropdownMenu2.IsMainMenu = false;
+            this.rjDropdownMenu2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fixtureAtletaToolStripMenuItem});
+            this.rjDropdownMenu2.MenuItemHeight = 25;
+            this.rjDropdownMenu2.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu2.Name = "rjDropdownMenu2";
+            this.rjDropdownMenu2.PrimaryColor = System.Drawing.Color.Empty;
+            this.rjDropdownMenu2.Size = new System.Drawing.Size(156, 26);
+            // 
+            // fixtureAtletaToolStripMenuItem
+            // 
+            this.fixtureAtletaToolStripMenuItem.Name = "fixtureAtletaToolStripMenuItem";
+            this.fixtureAtletaToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.fixtureAtletaToolStripMenuItem.Text = "Fixture atletas";
+            // 
             // Pantalla_Administrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -241,10 +265,11 @@ namespace Qmanager
             this.Text = "Pantalla_Administrador";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.rjDropdownMenu1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox1)).EndInit();
             this.PanelForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.rjCircularPictureBox2)).EndInit();
+            this.rjDropdownMenu2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,7 +277,7 @@ namespace Qmanager
 
         #endregion
 
-        private CustomControls.RJControls.RJButton rjButton2;
+        private CustomControls.RJControls.RJButton Evento;
         private CustomControls.RJControls.RJButton Registros;
         private CustomControls.RJControls.RJButton rjButton1;
         private System.Windows.Forms.Panel panel1;
@@ -264,5 +289,7 @@ namespace Qmanager
         private System.Windows.Forms.ToolStripMenuItem registroAtletaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroArbitroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroProfesorToolStripMenuItem;
+        private CustomControls.RJControls.RJDropdownMenu rjDropdownMenu2;
+        private System.Windows.Forms.ToolStripMenuItem fixtureAtletaToolStripMenuItem;
     }
 }

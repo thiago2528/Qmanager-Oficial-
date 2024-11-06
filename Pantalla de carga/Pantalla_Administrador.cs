@@ -47,7 +47,7 @@ namespace Qmanager
 
         private void rjCircularPictureBox1_Click(object sender, EventArgs e)
         {
-
+            
             var boton = sender as Control;
             int x = boton.Left;
             int y = boton.Top - menuDesplegable.Height;
@@ -124,5 +124,9 @@ namespace Qmanager
             AbrirFormularioEnPanel(new Registro_Profesor());
         }
 
+        private void Evento_Click(object sender, EventArgs e)
+        {
+            rjDropdownMenu2.Show(Evento, Evento.Width, 0);
+        }
     }
 }
