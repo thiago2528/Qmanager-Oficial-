@@ -116,7 +116,7 @@ namespace Qmanager
 
         private void registroArbitroToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            AbrirFormularioEnPanel(new Registro_Arbitro());
         }
 
         private void registroProfesorToolStripMenuItem_Click(object sender, EventArgs e)

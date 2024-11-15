@@ -69,6 +69,7 @@ namespace Qmanager
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.TextColor = System.Drawing.Color.White;
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // BtnGuardar
             // 
@@ -88,6 +89,7 @@ namespace Qmanager
             this.BtnGuardar.Text = "Guardar";
             this.BtnGuardar.TextColor = System.Drawing.Color.White;
             this.BtnGuardar.UseVisualStyleBackColor = false;
+            this.BtnGuardar.Click += new System.EventHandler(this.BtnGuardar_Click);
             // 
             // PicFoto
             // 
@@ -107,6 +109,7 @@ namespace Qmanager
             this.PicFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicFoto.TabIndex = 37;
             this.PicFoto.TabStop = false;
+            this.PicFoto.Click += new System.EventHandler(this.rjCircularPictureBox1_Click);
             // 
             // BtnBorrar
             // 
@@ -126,6 +129,7 @@ namespace Qmanager
             this.BtnBorrar.Text = "Nuevo";
             this.BtnBorrar.TextColor = System.Drawing.Color.White;
             this.BtnBorrar.UseVisualStyleBackColor = false;
+            this.BtnBorrar.Click += new System.EventHandler(this.BtnBorrar_Click);
             // 
             // link
             // 
@@ -138,6 +142,7 @@ namespace Qmanager
             this.link.TabStop = true;
             this.link.Text = "Seleccionar";
             this.link.Visible = false;
+           
             // 
             // LblFoto
             // 
@@ -171,6 +176,7 @@ namespace Qmanager
             this.BtnBuscar.TabIndex = 48;
             this.BtnBuscar.TextColor = System.Drawing.Color.White;
             this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // TxtCedulaBusqueda
             // 
@@ -280,6 +286,8 @@ namespace Qmanager
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(395, 315);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
             // 
             // label3
             // 
@@ -358,6 +366,7 @@ namespace Qmanager
             this.Name = "Registro_Arbitro";
             this.Text = "Registro_Arbitro";
             this.Load += new System.EventHandler(this.Registro_Arbitro_Load);
+            this.Click += new System.EventHandler(this.Registro_Arbitro_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

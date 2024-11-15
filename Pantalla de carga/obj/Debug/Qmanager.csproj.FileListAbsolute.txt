@@ -287,3 +287,7 @@ C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qma
 C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qmanager.Registro_Atleta.resources
 C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qmanager.Registro_Arbitro.resources
 C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qmanager.Registro_Profesor.resources
+C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\bin\Debug\Qmanager.exe.manifest
+C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\bin\Debug\Qmanager.application
+C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qmanager.exe.manifest
+C:\Users\USUARIO\source\repos\Qmanager (Oficial)\Pantalla de carga\obj\Debug\Qmanager.application

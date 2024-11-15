@@ -15,7 +15,6 @@ namespace Qmanager
         public Registro_Arbitro()
         {
             InitializeComponent();
-            InitializeComponent();
             TxtCedula.KeyPress += TxtCedula_KeyPress;
             TxtNombre.KeyPress += TxtNombre_KeyPress;
             TxtApellido.KeyPress += TxtApellido_KeyPress;
@@ -92,8 +91,8 @@ namespace Qmanager
                 return; // Sale del método sin continuar el guardado
             }
 
-            // Crear un objeto CEAtleta con los datos del formulario
-            CEAtleta atleta = new CEAtleta
+            // Crear un objeto CEArbitro con los datos del formulario
+            CEArbitro arbitro = new CEArbitro
             {
                 Cedula = TxtCedula.Texts,
                 Nombre = TxtNombre.Texts,
@@ -103,16 +102,16 @@ namespace Qmanager
             };
 
             // Verificar si la cédula ya existe
-            if (Atleta.ExisteCedula(atleta.Cedula))
+            if (Arbitro.ExisteCedula(arbitro.Cedula))
             {
                 // Si existe, proceder a modificar
-                int result = Atleta.ModificarAtleta(atleta);
-                MessageBox.Show(result > 0 ? "Atleta modificado exitosamente." : "Error al modificar el atleta.");
+                int result = Arbitro.ModificarArbitro(arbitro);
+                MessageBox.Show(result > 0 ? "Árbitro modificado exitosamente." : "Error al modificar el árbitro.");
             }
             else
             {
                 // Si no existe, proceder a agregar
-                int result = Atleta.AgregarAtleta(atleta);
+                int result = Arbitro.AgregarArbitro(arbitro);
                 MessageBox.Show(result > 0 ? "Datos guardados exitosamente." : "Error al guardar los datos.");
             }
 
@@ -164,11 +163,11 @@ namespace Qmanager
             };
             dataGridView1.Columns.Add(linkColumn);
 
-            // Asignar la lista de atletas como fuente de datos
-            List<CEAtleta> atletas = Atleta.PresentarRegistro();
-            foreach (CEAtleta atleta in atletas)
+
+            List<CEArbitro> arbitros = Arbitro.PresentarRegistro();
+            foreach (CEArbitro arbitro in arbitros)
             {
-                dataGridView1.Rows.Add(atleta.Cedula, atleta.Nombre, atleta.Apellido, atleta.Foto);
+                dataGridView1.Rows.Add(arbitro.Cedula, arbitro.Nombre, arbitro.Apellido, arbitro.Foto);
             }
         }
 
@@ -187,17 +186,17 @@ namespace Qmanager
                     cedulasAEliminar.Add(cedula);
                 }
 
-                // Borrar los atletas seleccionados
+                // Borrar los árbitros seleccionados
                 foreach (string cedula in cedulasAEliminar)
                 {
-                    int resultado = Atleta.EliminarAtleta(cedula);
+                    int resultado = Arbitro.EliminarArbitro(cedula);
                     if (resultado > 0)
                     {
-                        MessageBox.Show($"El atleta con cédula {cedula} ha sido eliminado.");
+                        MessageBox.Show($"El árbitro con cédula {cedula} ha sido eliminado.");
                     }
                     else
                     {
-                        MessageBox.Show($"Error al eliminar el atleta con cédula {cedula}.");
+                        MessageBox.Show($"Error al eliminar el árbitro con cédula {cedula}.");
                     }
                 }
 
@@ -206,7 +205,7 @@ namespace Qmanager
             }
             else
             {
-                MessageBox.Show("Por favor, selecciona al menos un atleta para eliminar.");
+                MessageBox.Show("Por favor, selecciona al menos un árbitro para eliminar.");
             }
         }
 
@@ -220,19 +219,19 @@ namespace Qmanager
             if (!string.IsNullOrEmpty(cedulaBusqueda))
             {
                 // Llama al método para buscar coincidencias parciales
-                List<CEAtleta> atletas = Atleta.BuscarAtletasPorCedulaParcial(cedulaBusqueda);
+                List<CEArbitro> arbitros = Arbitro.BuscarArbitrosPorCedulaParcial(cedulaBusqueda);
 
-                if (atletas.Count > 0)
+                if (arbitros.Count > 0)
                 {
                     dataGridView1.Rows.Clear();
-                    foreach (var atleta in atletas)
+                    foreach (var arbitro in arbitros)
                     {
-                        dataGridView1.Rows.Add(atleta.Cedula, atleta.Nombre, atleta.Apellido, atleta.Foto);
+                        dataGridView1.Rows.Add(arbitro.Cedula, arbitro.Nombre, arbitro.Apellido, arbitro.Foto);
                     }
                 }
                 else
                 {
-                    MessageBox.Show("No se encontraron atletas con los datos ingresados.");
+                    MessageBox.Show("No se encontraron árbitros con los datos ingresados.");
                 }
             }
             else
@@ -245,5 +244,7 @@ namespace Qmanager
         {
 
         }
+
+
     }
 }

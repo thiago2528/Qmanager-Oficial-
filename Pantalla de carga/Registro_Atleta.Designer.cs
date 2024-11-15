@@ -1,4 +1,7 @@
 ﻿
+using System;
+using System.Windows.Forms;
+
 namespace Qmanager
 {
     partial class Registro_Atleta
@@ -389,6 +392,8 @@ namespace Qmanager
             this.PerformLayout();
 
         }
+
+
 
         #endregion
 
